@@ -29,7 +29,7 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
 label {
@@ -48,14 +48,17 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    font-size: 1.1em; /* Larger button text */
+    transition: background-color 0.3s ease; /
 }
   
 button:hover {
     background-color: #e7470d;
   }
   
-  #result {
-    margin-top: 20px;
-    font-size: 1.2em;
+#result {
+    margin-top: 25px; /* Increased margin */
+    font-size: 1.3em; /* Larger result text */
     color: #333;
-  }
+    font-weight: bold; /* Make the result stand out *
+     }
