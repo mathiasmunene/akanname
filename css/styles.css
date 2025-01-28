@@ -37,21 +37,21 @@ label {
     font-size: 1.1em;
   }
   
-  input, select, button {
+input, select, button {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
+}
   
-  button {
+button {
     background-color: #007bff;
     color: #fff;
     border: none;
     cursor: pointer;
-  }
+}
   
-  button:hover {
-    background-color: #0056b3;
+button:hover {
+    background-color: #e7470d;
   }
   
   #result {
