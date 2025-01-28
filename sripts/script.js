@@ -37,3 +37,10 @@ function calculateDayOfWeek(date) {
 
   return dayOfWeek < 0 ? dayOfWeek + 7 : dayOfWeek; // Ensure positive result
 }
+
+function getAkanName(dayOfWeek, gender) {
+    const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  
+    return gender === "male" ? maleNames[dayOfWeek] : femaleNames[dayOfWeek];
+  }
