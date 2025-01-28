@@ -11,3 +11,10 @@ if (!birthday || isNaN(birthday.getTime())) {
     alert("Please enter a valid date.");
     return;
   }
+
+// Get the day of the week
+const dayOfWeek = calculateDayOfWeek(birthday);
+
+// Get the Akan name
+const akanName = getAkanName(dayOfWeek,gender);
+
