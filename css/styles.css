@@ -13,11 +13,13 @@ body {
 
 .container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding */
+    border-radius: 12px; /* Slightly larger border radius */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
     text-align: center;
-}
+    width: 400px; 
+    max-width: 90%; /* Ensure it doesn't overflow on small screens */
+  }
   
 h1 {
     color: #333;
@@ -29,7 +31,7 @@ form {
     gap: 10px;
   }
 
-  abel {
+label {
     font-weight: bold;
   }
   

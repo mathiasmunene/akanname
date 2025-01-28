@@ -18,7 +18,7 @@ MATHIAS MUNENE
 - JavaScript
 
 ## Live Site
-[GitHub Pages URL]
+https://mathiasmunene.github.io/akanname/
 
 ## License
 MIT License
