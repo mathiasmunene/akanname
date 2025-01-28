@@ -18,3 +18,22 @@ const dayOfWeek = calculateDayOfWeek(birthday);
 // Get the Akan name
 const akanName = getAkanName(dayOfWeek,gender);
 
+//Display the results
+document.getElementById("result").innerText = `Your Akan name is ${akanName}!`;
+});
+
+function calculateDayOfWeek(date) {
+  const CC = Math.floor(date.getFullYear() / 100);
+  const YY = date.getFullYear() % 100;
+  const MM = date.getMonth() + 1; // bse mnths are 0-indexed in js
+  const DD = date.getDate();
+
+  const dayOfWeek = (
+    (Math.floor(CC / 4) - 2 * CC - 1) +
+    (Math.floor(5 * YY / 4)) +
+    (Math.floor(26 * (MM + 1) / 10)) +
+    DD
+  ) % 7;
+
+  return dayOfWeek < 0 ? dayOfWeek + 7 : dayOfWeek; // Ensure positive result
+}
